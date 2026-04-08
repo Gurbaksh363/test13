@@ -15,7 +15,7 @@ jobs:
       - name: Deploy to S3
         uses: jakejarvis/s3-sync-action@master
         with:
-          args: --follow-symlinks --delete --exclude ".git/*"
+          args: --follow-symlinks --delete --exclude '.git/*'
         env:
           AWS_S3_BUCKET: "student-devops-bucket-2026" # REPLACE THIS with your bucket name
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
